@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "216380707856",
+    "project_id": "workerhub-b941a",
+    "storage_bucket": "workerhub-b941a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216380707856:android:6cf2c5a3efa73d0ef26695",
+        "android_client_info": {
+          "package_name": "com.example.workerhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216380707856-qhai8ndcfbatubkl1moetd3skfurkb5g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.workerhub",
+            "certificate_hash": "8384135d02cc187f37b340cba81342f46612d35e"
+          }
+        },
+        {
+          "client_id": "216380707856-6caf12ck4ki8rdjqs9m35vkr24c3iqlr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbXI58aPzBURbPum3Zbb_xj8OtVFMnMXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216380707856-6caf12ck4ki8rdjqs9m35vkr24c3iqlr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

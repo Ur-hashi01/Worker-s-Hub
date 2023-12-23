@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WORKERHUB</string>
+
+    <string-array name="service_options">
+        <item>Carpenter</item>
+        <item>Cleaner</item>
+        <item>Cook</item>
+        <item>Electrician</item>
+        <item>Mason</item>
+        <item>Nurse</item>
+        <item>Painter</item>
+        <item>Plumber</item>
+        <!-- Add more options as needed -->
+    </string-array>
+
+
+</resources>

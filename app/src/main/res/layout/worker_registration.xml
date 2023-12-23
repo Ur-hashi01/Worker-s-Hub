@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundimg"
+    tools:context=".register">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/cinzel_bold"
+        android:text=" WORKERS HUB"
+        android:textColor="@color/white"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:baselineAligned="false"
+        android:text="Worker Registration"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <!-- full name design -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullname_field"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:boxBackgroundColor="@color/pink"
+            android:hint="Full name"
+            app:passwordToggleTint="@color/orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- email design -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_field"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:boxBackgroundColor="@android:color/white"
+            android:hint="Email"
+            app:passwordToggleTint="@color/orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- phone no design -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone_field"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:boxBackgroundColor="@color/des"
+            android:hint="Phone no">
+
+            <!-- phone no design -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:inputType="phone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- service selection -->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Select services:"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:gravity="center">
+            <Spinner
+                android:id="@+id/service_field"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@color/sky_blue"
+                android:entries="@array/service_options"/>
+
+            <ImageView
+                android:padding="15dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/arrow"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+
+        <!-- state field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/state_field"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:boxBackgroundColor="@color/d"
+            android:hint="State"
+            app:passwordToggleTint="@color/orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:inputType="textPostalAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- city design -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/city_field"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:boxBackgroundColor="@color/c"
+            android:hint="City"
+            app:passwordToggleTint="@color/orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:inputType="textPostalAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- colony design -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/colony_field"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:boxBackgroundColor="@color/b"
+            android:hint="Colony"
+            app:passwordToggleTint="@color/orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:inputType="textPostalAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- pin code design -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pincode_field"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:boxBackgroundColor="@color/a"
+            android:hint="Pin code"
+            app:passwordToggleTint="@color/orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <Button
+        android:id="@+id/w_registerbtn"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:backgroundTint="@color/orange"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+</LinearLayout>
